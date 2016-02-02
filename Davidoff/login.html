@@ -1,0 +1,107 @@
+﻿<!DOCTYPE html>
+<html lang="de-DE">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="content-language" content="de-DE" />
+    <meta name="description" content="Events and parties of Davidoff Switzerland" />
+    <meta name="keywords" content="signin, login, event, events, party, parties, davidoff, cigarettes, quw45ity cigarettes, zino, zino davidoff" />
+
+    <meta http-equiv="Cache-Control" content="no-cache" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="-1" />
+
+    <title>Sign In - Davidoff Cigarettes Switzerland</title>
+
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+
+    <link rel="shortcut icon" href="/davidoff.ico" />
+    <link rel="icon" type="image/png" href="image/davidoff.png" />
+</head>
+<body>
+    <div id="wrapper-login">
+        <div id="signin-view" class="container">
+            <header class="header">
+                <ul class="language-switch">
+                    <li class="active">
+                        <a href="#" title="Switch language to Deutsch">Deutsch</a>
+                    </li>
+                    <li>
+                        <a href="#" title="Switch language to Français">Français</a>
+                    </li>
+                </ul>
+            </header>
+            <section class="main-content">
+                <h1>Welcome</h1>
+
+                <div id="status"></div>
+
+                <form id="login" action="home.html" class="home" method="get">
+                    <input name="emailid" id="email" type="text" maxlength="255" class="textbox" placeholder="Email" />
+                    <input name="password" id="password" type="password" maxlength="50" class="textbox" placeholder="Password" />
+                    <input type="submit" value="Login" class="button" />
+                    <div class="action-links">
+                        <a href="#">Anmeldedaten vergessen?</a>
+                        <a href="#">Neu registrieren</a>
+                    </div>
+                </form>
+            </section>
+            <section class="info">
+                <div class="intro">
+                    Wenn Sie 18 Jahre oder älter sind, heissen wir Sie in der Welt von Davidoff Cigarettes herzlich willkommen.
+                    <br />Melden Sie sich einfach mit Ihrem Benutzernamen und Passwort an.<br />
+                    Wir werden Sie über zukünftige Events und vieles mehr auf dem Laufenden halten.
+                </div>
+                <a class="general-mail" href="mailto:info@davidoff-cigarettes.ch">info@davidoff-cigarettes.ch</a>
+            </section>
+        </div>
+        <footer id="footer">
+            <div class="footer-content">
+                <ul>
+                    <li><a href="#" title="Feedback">Feedback</a></li>
+                    <li><a href="#" title="Deutsch">Deutsch</a></li>
+                    <li><a href="#" title="Français">Français</a></li>
+                    <li><a href="#" title="Sing out">Sing out</a></li>
+                </ul>
+            </div>
+            <div class="death">
+                <div class="content"></div>
+            </div>
+        </footer>
+    </div>
+
+
+    <script src="scripts/jquery-1.12.0.js"></script>
+    <script src="scripts/modernizr.min.js"></script>
+    <script src="scripts/jquery.validate.min.js"></script>
+    <script>
+        $(function () {
+            $("#login").validate({
+                // Specify the validation rules
+                rules: {
+                    emailid: {
+                        required: true,
+                        email: true
+                    },
+                    password: {
+                        required: true,
+                        minlength: 5
+                    }
+                },
+
+                // Specify the validation error messages
+                messages: {
+                    username: "Please enter a valid email address",
+                    password: {
+                        required: "Please provide a password",
+                        minlength: "Your password must be at least 5 characters long"
+                    }
+                }
+            });
+
+        });
+    </script>
+
+</body>
+
+</html>

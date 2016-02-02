@@ -1,0 +1,136 @@
+﻿<!DOCTYPE html>
+<html lang="de-DE">
+<head>
+
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="content-language" content="de-DE" />
+    <meta name="description" content="Events and parties of Davidoff Switzerland" />
+    <meta name="keywords" content="signin, login, event, events, party, parties, davidoff, cigarettes, quw45ity cigarettes, zino, zino davidoff" />
+
+    <meta http-equiv="Cache-Control" content="no-cache" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="-1" />
+
+    <title>Home - Davidoff Cigarettes Switzerland</title>
+
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+
+    <link rel="shortcut icon" href="/davidoff.ico" />
+    <link rel="icon" type="image/png" href="image/davidoff.png" />
+</head>
+<body>
+    <div id="wrapper-home">
+        <div id="home-view" class="container">
+            <header class="home-header row">
+                <div class="col-md-9">
+                    <ul class="menu">
+                        <li>
+                            <a href="#">The Collection</a>
+                        </li>
+                        <li>
+                            <a href="#">The Heritage</a>
+                        </li>
+                        <li>
+                            <a href="#">The Events</a>
+                        </li>
+                        <li>
+                            <a href="#">My Profile</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <img src="image/logo.png" />
+                </div>
+            </header>
+            <section class="product">
+                <div class="product-container">
+                    <figure style="z-index:5">
+                        <figcaption class="visibility">classic</figcaption>
+                        <img src="image/Products/home-classic.png" />
+                    </figure>
+                    <figure style="z-index:4">
+                        <figcaption class="visibility">gold</figcaption>
+                        <img src="image/Products/home-gold.png" />
+                    </figure>
+                    <figure style="z-index:3">
+                        <figcaption class="visibility">menthol</figcaption>
+                        <img src="image/Products/home-menthol.png" />
+                    </figure>
+
+                    <figure style="z-index:2">
+                        <figcaption class="visibility">blue</figcaption>
+                        <img src="image/Products/home-blue.png" />
+                    </figure>
+
+                    <figure style="z-index:1">
+                        <figcaption class="visibility">gold-slim</figcaption>
+                        <img src="image/Products/home-gold-slim.png" />
+                    </figure>
+                </div>
+
+            </section>
+
+            <div class="textile">
+                <div class="video">
+                    <img src="image/home_video_thumb.jpg" />
+                </div>
+            </div>
+            
+
+            <selection class="main row">
+                <div class="col-md-4">
+                    <img src="image/design.png" />
+                    <h4>The Collection</h4>
+                    <p>Die ganze Vielfalt des einzigartigen Geschmacks.</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="image/gallery.png" />
+                    <h4>The Heritage</h4>
+                    <p>Die ganze Vielfalt des einzigartigen Geschmacks.</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="image/design.png" />
+                    <h4>The Event</h4>
+                    <p>Die ganze Vielfalt des einzigartigen Geschmacks.</p>
+                </div>
+            </selection>
+
+        </div>
+        <footer id="footer">
+            <div class="footer-content">
+                <ul>
+                    <li><a href="#" title="Feedback">Feedback</a></li>
+                    <li><a href="#" title="Deutsch">Deutsch</a></li>
+                    <li><a href="#" title="Français">Français</a></li>
+                    <li><a href="login.html" title="Sing out">Sing out</a></li>
+                </ul>
+            </div>
+            <div class="death">
+                <div class="content"></div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="scripts/jquery-1.12.0.js"></script>
+    <script src="scripts/modernizr.min.js"></script>
+
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+
+            $('.product-container').find('figure').on('mouseenter', function () {
+                $(this).animate({
+                    'left': '+50'
+                }).find('figcaption').removeClass('visibility');
+            })
+            .mouseleave(function () {
+                $(this).animate({
+                    'left': '-0'
+                }).find('figcaption').addClass('visibility');
+            });
+        });
+    </script>
+</body>
+
+</html>
